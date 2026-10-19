@@ -1,0 +1,15 @@
+# globalescort.de
+
+> globalescort.de ist eine neue, deutschlandweite Plattform (Start in Kürze), die die Escort-Damen aller teilnehmenden Agenturen nach Stadt gebündelt auf einer Seite zeigt. Nur für Erwachsene (18+). Gebucht wird immer direkt bei der jeweiligen Agentur; globalescort.de vermittelt selbst keine Dienstleistungen.
+
+Zielgruppen: Escort-Agenturen (Betreiber), die ihre Damen listen möchten, und volljährige Gäste, die in ihrer Stadt eine Begleitung suchen.
+
+## Seiten
+
+- [Startseite](https://globalescort.de/): Überblick über die Plattform und Einstieg für Betreiber und Gäste
+- [Für Escort-Agenturen](https://globalescort.de/betreiber/): Vorteile, Funktionsweise, Preis (99 € pro Dame und Monat, ab 10 Damen), FAQ und Anfrageformular
+- [Für Gäste](https://globalescort.de/gaeste/): Funktionen der Plattform (Stadt wählen, Filter, Swipe, Private Galerie) und Early-Access-Warteliste
+
+## Optional
+
+- [Ausführliche Fassung](https://globalescort.de/llms-full.txt): Alle Inhalte der Website als Text
