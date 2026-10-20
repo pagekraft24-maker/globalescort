@@ -240,3 +240,17 @@ a{color:var(--red-text)}a:hover{color:#FF8587}
 .section--light .calc .muted{color:var(--muted)}
 .section--light .calc{color:var(--text)}
 @media (max-width:720px){.tilt-l,.tilt-r{transform:none}}
+.legal--wide{max-width:980px}
+.legal-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:16px;margin:8px 0 56px}
+.legal-card{padding:32px;background:var(--panel);border:1px solid var(--line-2);border-radius:10px}
+.legal-card--red{background:var(--red);border-color:var(--red);color:#fff}
+.legal .legal-card h2{margin:0 0 16px;font-size:22px;letter-spacing:.08em;opacity:.85}
+.legal-company{margin:0 0 10px;font-family:var(--display);font-weight:900;font-size:clamp(32px,4vw,44px);line-height:.95;text-transform:uppercase;color:inherit!important}
+.legal-card address{font-style:normal;font-size:18px;line-height:1.5}
+.legal .legal-small{margin:16px 0 0;font-size:13px;color:inherit;opacity:.8}
+.legal-dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 20px;font-size:17px}
+.legal-dl dt{color:var(--muted);font-weight:700}
+.legal-dl dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.legal-block{padding:28px 0;border-top:1px solid var(--line-2)}
+.legal .legal-block h2{margin:0 0 10px}
+.legal-block p{margin:0;max-width:760px}
