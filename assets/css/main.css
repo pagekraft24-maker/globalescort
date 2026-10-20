@@ -254,3 +254,13 @@ a{color:var(--red-text)}a:hover{color:#FF8587}
 .legal-block{padding:28px 0;border-top:1px solid var(--line-2)}
 .legal .legal-block h2{margin:0 0 10px}
 .legal-block p{margin:0;max-width:760px}
+.soon{flex:1 1 480px;min-width:0;padding:40px;background:var(--panel);border:2px dashed #3A3A3A;border-radius:12px;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.soon-badge{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;background:var(--red);color:#fff;border-radius:999px;font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
+.soon-badge::before{content:"";width:8px;height:8px;border-radius:999px;background:#fff;animation:soon-pulse 1.6s ease-in-out infinite}
+@keyframes soon-pulse{50%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){.soon-badge::before{animation:none}}
+.soon-title{margin:0;font-family:var(--display);font-weight:900;font-size:clamp(36px,4.2vw,52px);line-height:.92;text-transform:uppercase}
+.soon-text{margin:0;font-size:17px;color:var(--muted)}
+.soon-inline{margin:40px 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:12px 14px;font-size:18px;font-weight:600;color:var(--soft)}
+.soon-inline--center{justify-content:center}
+@media (max-width:560px){.soon{padding:28px 22px}}
