@@ -67,7 +67,7 @@
       new FormData(form).forEach(function (v, k) { if (k !== 'bilder') data[k] = typeof v === 'string' ? v.trim() : v; });
       data.bilder = images;
       btn.disabled = true; status.className = 'apply-status full'; status.textContent = 'Wird gesendet …';
-      fetch('/api/bewerbung', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
+      fetch('/api/bewerbung/', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
         .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { return { ok: r.ok, j: j }; }); })
         .then(function (res) {
           if (!res.ok) throw new Error(res.j.error || 'Senden fehlgeschlagen.');
