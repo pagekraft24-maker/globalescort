@@ -2,6 +2,10 @@
   'use strict';
   var CONTACT_EMAIL = 'kontakt@globalescort.de';
 
+  // Zurück-Taste: Seiten aus dem Browser-Zwischenspeicher (bfcache) frisch laden,
+  // damit sie nie leer oder im alten Zustand erscheinen
+  window.addEventListener('pageshow', function (e) { if (e.persisted) window.location.reload(); });
+
   // Altershinweis (18+)
   var gate = document.getElementById('agegate');
   if (gate) {

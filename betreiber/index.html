@@ -28,17 +28,20 @@
 <link rel="preload" href="/assets/fonts/sofia-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/fonts.css">
 <link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/apply.css">
 <script src="/assets/js/main.js" defer></script>
+<script src="/assets/js/apply.js" defer></script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
 {"@type":"OnlineBusiness","@id":"https://globalescort.de/#org","name":"globalescort.de","legalName":"GlobalEscort International Limited","address":{"@type":"PostalAddress","streetAddress":"107 Cheapside, 9th Floor","postalCode":"EC2V 6DN","addressLocality":"London","addressRegion":"England","addressCountry":"GB"},"url":"https://globalescort.de/","logo":"https://globalescort.de/apple-touch-icon.png","image":"https://globalescort.de/og-image.jpg","areaServed":{"@type":"Country","name":"Deutschland"},"email":"kontakt@globalescort.de"},
 {"@type":"WebSite","@id":"https://globalescort.de/#website","url":"https://globalescort.de/","name":"globalescort.de","inLanguage":"de-DE","publisher":{"@id":"https://globalescort.de/#org"}},
 {"@type":"WebPage","@id":"https://globalescort.de/betreiber/#webpage","url":"https://globalescort.de/betreiber/","name":"Für Escort-Agenturen: Platz 1 in Ihrer Stadt","isPartOf":{"@id":"https://globalescort.de/#website"},"inLanguage":"de-DE","breadcrumb":{"@id":"https://globalescort.de/betreiber/#breadcrumb"},"mainEntity":{"@id":"https://globalescort.de/betreiber/#service"}},
 {"@type":"BreadcrumbList","@id":"https://globalescort.de/betreiber/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://globalescort.de/"},{"@type":"ListItem","position":2,"name":"Für Betreiber","item":"https://globalescort.de/betreiber/"}]},
-{"@type":"Service","@id":"https://globalescort.de/betreiber/#service","name":"Listing für Escort-Agenturen","serviceType":"Online-Verzeichnis-Listing","provider":{"@id":"https://globalescort.de/#org"},"areaServed":{"@type":"Country","name":"Deutschland"},"audience":{"@type":"BusinessAudience","name":"Escort-Agenturen"},"offers":{"@type":"Offer","priceCurrency":"EUR","price":"99","description":"99 € pro Dame im Monat, ab 10 Damen","priceSpecification":{"@type":"UnitPriceSpecification","price":"99","priceCurrency":"EUR","unitText":"pro Dame und Monat","eligibleQuantity":{"@type":"QuantitativeValue","minValue":10}}}},
+{"@type":"Service","@id":"https://globalescort.de/betreiber/#service","name":"Listing für Escort-Agenturen","serviceType":"Online-Verzeichnis-Listing","provider":{"@id":"https://globalescort.de/#org"},"areaServed":{"@type":"Country","name":"Deutschland"},"audience":{"@type":"BusinessAudience","name":"Escort-Agenturen"},"offers":[{"@type":"Offer","name":"Einzelne Dame","priceCurrency":"EUR","price":"169","description":"169 € im Monat für einzelne Damen, Mindestlaufzeit 6 Monate"},{"@type":"Offer","name":"Agentur","priceCurrency":"EUR","price":"99","description":"99 € pro Dame im Monat, ab 10 Damen, Mindestlaufzeit 6 Monate","priceSpecification":{"@type":"UnitPriceSpecification","price":"99","priceCurrency":"EUR","unitText":"pro Dame und Monat","eligibleQuantity":{"@type":"QuantitativeValue","minValue":10}}}]},
 {"@type":"FAQPage","@id":"https://globalescort.de/betreiber/#faq","mainEntity":[
 {"@type":"Question","name":"Wer bucht die Damen – globalescort.de oder meine Agentur?","acceptedAnswer":{"@type":"Answer","text":"Immer Ihre Agentur. Gäste kontaktieren Sie direkt per Telefon, WhatsApp oder über Ihre Buchungsseite. Es gibt keine Provision pro Date."}},
-{"@type":"Question","name":"Was kostet es genau?","acceptedAnswer":{"@type":"Answer","text":"99 € pro Dame im Monat, ab 10 Damen. Bei 15 Damen sind das 1.485 € im Monat."}},
+{"@type":"Question","name":"Was kostet es genau?","acceptedAnswer":{"@type":"Answer","text":"Agenturen: 99 € pro Dame im Monat, ab 10 Damen. Bei 15 Damen sind das 1.485 € im Monat. Einzelne Damen ohne Agentur: 169 € im Monat."}},
+{"@type":"Question","name":"Wie lange ist die Laufzeit?","acceptedAnswer":{"@type":"Answer","text":"Die Mindestlaufzeit beträgt 6 Monate."}},
 {"@type":"Question","name":"Wie funktioniert die Private Galerie?","acceptedAnswer":{"@type":"Answer","text":"Freiwillig pro Dame: zusätzliche Bilder, die nur altersverifizierte Gäste gegen eine Gebühr freischalten. Ihre Agentur wird am Umsatz beteiligt."}},
 {"@type":"Question","name":"In welchen Städten geht es los?","acceptedAnswer":{"@type":"Answer","text":"Zum Start in ausgewählten Großstädten wie Stuttgart, München, Frankfurt, Berlin, Hamburg, Köln und Düsseldorf. Weitere Städte folgen."}}
 ]}
@@ -56,7 +59,7 @@
       <a href="#app">Die App</a>
       <a href="#preis">Preis</a>
       <a class="dim" href="/gaeste/">Für Gäste</a>
-      <a class="btn btn-red" href="#kontakt">Bald bewerben</a>
+      <a class="btn btn-red" href="#kontakt">Jetzt bewerben</a>
     </nav>
   </div>
 </header>
@@ -70,7 +73,7 @@
       <h1 class="display" style="max-width:980px;font-size:clamp(60px,11vw,164px)">Wer <span class="red">oben</span> steht,<br>wird gebucht.</h1>
       <p class="lead">globalescort.de wird die Seite, auf der Gäste in ihrer Stadt nach Escort suchen. Unser Ziel: Platz 1 in jeder Zielstadt. Ihre Damen stehen dort – oder die Ihrer Konkurrenz.</p>
       <div style="margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px">
-        <a class="btn btn-red" href="#kontakt" style="min-height:60px;padding:0 32px">Bald bewerben
+        <a class="btn btn-red" href="#kontakt" style="min-height:60px;padding:0 32px">Jetzt bewerben
           <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
         <a href="#preis" aria-label="99 Euro pro Dame, ab 10 Damen – zum Preis" style="width:132px;height:132px;flex:0 0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#F3F1EE;color:#0B0B0B;border-radius:999px;transform:rotate(-10deg);text-decoration:none;text-align:center">
@@ -154,6 +157,7 @@
         <p class="eyebrow eyebrow--dark" style="margin-bottom:8px">Ein Preis. Alles drin.</p>
         <div class="price-big">99<span class="red">€</span></div>
         <div class="display price-sub">Pro Dame im Monat<br><span class="red">ab 10 Damen</span></div>
+        <p class="price-alt"><b>Einzelne Dame ohne Agentur?</b> 169 € / Monat · Laufzeit ab 6 Monate</p>
         <ul class="chips">
           <li>Profil pro Dame</li><li>Alle Ihre Städte</li><li>Swipe &amp; Filter</li><li>Direktkontakt zu Ihnen</li><li>Private Galerie optional</li>
         </ul>
@@ -173,7 +177,8 @@
           <span class="muted" style="font-size:15px"><span data-calc-n>15</span> × 99 € =</span>
           <span><output data-calc-total>1.485 €</output> <small>/ Monat</small></span>
         </div>
-        <a class="btn btn-red" href="#kontakt">Bald bewerben</a>
+        <a class="btn btn-red" href="#kontakt">Jetzt bewerben</a>
+        <div class="muted" style="font-size:13px">Mindestlaufzeit 6 Monate</div>
       </div>
     </div>
   </section>
@@ -189,22 +194,86 @@
     <div class="wrap faq">
       <h2 class="display" style="font-size:72px;margin-bottom:32px">Fragen?</h2>
       <details><summary>Wer bucht die Damen – globalescort.de oder meine Agentur?</summary><p>Immer Ihre Agentur. Gäste kontaktieren Sie direkt per Telefon, WhatsApp oder über Ihre Buchungsseite. Es gibt keine Provision pro Date.</p></details>
-      <details><summary>Was kostet es genau?</summary><p>99 € pro Dame im Monat, ab 10 Damen. Bei 15 Damen sind das 1.485 € im Monat.</p></details>
+      <details><summary>Was kostet es genau?</summary><p>Agenturen: 99 € pro Dame im Monat, ab 10 Damen. Bei 15 Damen sind das 1.485 € im Monat. Einzelne Damen ohne Agentur: 169 € im Monat.</p></details>
+      <details><summary>Wie lange ist die Laufzeit?</summary><p>Die Mindestlaufzeit beträgt 6 Monate.</p></details>
       <details><summary>Wie funktioniert die Private Galerie?</summary><p>Freiwillig pro Dame: zusätzliche Bilder, die nur altersverifizierte Gäste gegen eine Gebühr freischalten. Ihre Agentur wird am Umsatz beteiligt.</p></details>
       <details><summary>In welchen Städten geht es los?</summary><p>Zum Start in ausgewählten Großstädten wie Stuttgart, München, Frankfurt, Berlin, Hamburg, Köln und Düsseldorf. Weitere Städte folgen.</p></details>
     </div>
   </section>
 
   <section class="section" id="kontakt" style="padding-top:80px">
-    <div class="wrap contact">
-      <div>
-        <h2 class="display" style="font-size:clamp(60px,8vw,116px)">Sichern Sie<br>sich <span class="red">Ihre Stadt.</span></h2>
-        <p class="muted" style="margin:26px 0 0;max-width:440px;font-size:18px">Seien Sie bereit, wenn es losgeht: Die ersten Agenturen pro Stadt sichern sich die besten Plätze.</p>
+    <div class="wrap apply">
+      <div class="apply-intro">
+        <p class="eyebrow">Jetzt bewerben</p>
+        <h2 class="display" style="font-size:clamp(56px,8vw,112px)">Sichern Sie<br>sich <span class="red">Ihre Stadt.</span></h2>
+        <ul class="apply-terms">
+          <li><b>Agentur</b><span>99 € pro Dame / Monat · ab 10 Damen</span></li>
+          <li><b>Einzelne Dame</b><span>169 € / Monat</span></li>
+          <li><b>Laufzeit</b><span>ab 6 Monate</span></li>
+        </ul>
+        <p class="muted" style="margin:24px 0 0;max-width:440px;font-size:17px">Wir prüfen jede Bewerbung und melden uns diskret per Telefon, WhatsApp oder E-Mail.</p>
       </div>
-      <div class="soon">
-        <span class="soon-badge">Bald verfügbar</span>
-        <p class="soon-title">Bald können Sie sich offiziell mit Ihrer Escort-Agentur bewerben.</p>
-        <p class="soon-text">Die Bewerbung für Agenturen öffnet in Kürze. Gründungspartner werden zuerst freigeschaltet – die Plätze pro Stadt sind begrenzt.</p>
+
+      <div class="apply-box">
+        <div class="apply-tabs" role="tablist" aria-label="Bewerben als">
+          <button type="button" role="tab" id="tab-agentur" aria-selected="true" aria-controls="form-agentur" data-tab="agentur">
+            <small>Ab 10 Damen</small><strong>Als Agentur</strong>
+          </button>
+          <button type="button" role="tab" id="tab-dame" aria-selected="false" aria-controls="form-dame" data-tab="dame">
+            <small>169 € / Monat</small><strong>Als einzelne Dame</strong>
+          </button>
+        </div>
+
+        <!-- Agentur -->
+        <form class="form apply-form" id="form-agentur" role="tabpanel" aria-labelledby="tab-agentur" data-apply="agentur" novalidate>
+          <input type="text" name="website_url" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label class="full">Firmenname / Agentur *<input class="field" name="firma" autocomplete="organization" required></label>
+          <label>Ansprechpartner *<input class="field" name="ansprechpartner" autocomplete="name" required></label>
+          <label>USt-ID / Handelsregister<input class="field" name="ust_hr"></label>
+          <label class="full">Anschrift (Straße, PLZ, Ort) *<input class="field" name="anschrift" autocomplete="street-address" required></label>
+          <label>E-Mail *<input class="field" type="email" name="email" autocomplete="email" required></label>
+          <label>Telefon / WhatsApp *<input class="field" type="tel" name="telefon" autocomplete="tel" required></label>
+          <label>Website<input class="field" type="url" name="website" placeholder="https://"></label>
+          <label>Anzahl Damen * (mind. 10)<input class="field" type="number" name="anzahl_damen" min="10" inputmode="numeric" required></label>
+          <label class="full">Städte *<input class="field" name="staedte" placeholder="z. B. Stuttgart, Ludwigsburg" required></label>
+          <label class="full">Nachricht<textarea class="field field--area" name="nachricht" rows="4"></textarea></label>
+          <label class="check full"><input type="checkbox" name="zustimmung" required><span>Ich habe die <a href="/datenschutz/" target="_blank">Datenschutzerklärung</a> gelesen und bin mit der Kontaktaufnahme einverstanden. Mindestlaufzeit 6 Monate. *</span></label>
+          <button type="submit" class="btn btn-red full apply-submit">Als Agentur bewerben</button>
+          <p class="apply-status full" role="status" aria-live="polite"></p>
+        </form>
+
+        <!-- Einzelne Dame -->
+        <form class="form apply-form" id="form-dame" role="tabpanel" aria-labelledby="tab-dame" data-apply="dame" hidden novalidate>
+          <input type="text" name="website_url" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label>Name / Künstlername *<input class="field" name="name" autocomplete="nickname" required></label>
+          <label>Stadt *<input class="field" name="stadt" placeholder="z. B. Stuttgart" required></label>
+          <label>E-Mail *<input class="field" type="email" name="email" autocomplete="email" required></label>
+          <label>Telefon / WhatsApp *<input class="field" type="tel" name="telefon" autocomplete="tel" required></label>
+
+          <details class="apply-more full">
+            <summary>Optional: Infos &amp; Bilder hinzufügen</summary>
+            <div class="apply-more-grid">
+              <label>Alter<input class="field" type="number" name="alter" min="18" max="99" inputmode="numeric"></label>
+              <label>Haarfarbe
+                <select class="field" name="haarfarbe"><option value="">Bitte wählen</option><option>Blond</option><option>Dunkelblond</option><option>Braun</option><option>Schwarz</option><option>Rot</option><option>Andere</option></select>
+              </label>
+              <label>Größe (cm)<input class="field" type="number" name="groesse" min="140" max="210" inputmode="numeric"></label>
+              <label>Konfektion<input class="field" name="konfektion" placeholder="z. B. 34/36"></label>
+              <label>Sprachen<input class="field" name="sprachen" placeholder="z. B. Deutsch, Englisch"></label>
+              <label>Umkreis (km)<input class="field" type="number" name="umkreis_km" min="0" max="500" placeholder="z. B. 50" inputmode="numeric"></label>
+              <label class="full">Über dich<textarea class="field field--area" name="ueber_mich" rows="4"></textarea></label>
+              <label class="full upload">Bilder <small>(bis zu 5, werden automatisch verkleinert)</small>
+                <input type="file" name="bilder" accept="image/jpeg,image/png,image/webp" multiple>
+              </label>
+              <div class="thumbs full" data-thumbs></div>
+            </div>
+          </details>
+
+          <label class="check full"><input type="checkbox" name="volljaehrig" required><span>Ich bin mindestens 18 Jahre alt und habe alle Rechte an den hochgeladenen Bildern. *</span></label>
+          <label class="check full"><input type="checkbox" name="zustimmung" required><span>Ich habe die <a href="/datenschutz/" target="_blank">Datenschutzerklärung</a> gelesen und bin mit der Kontaktaufnahme einverstanden. Mindestlaufzeit 6 Monate. *</span></label>
+          <button type="submit" class="btn btn-red full apply-submit">Als Dame bewerben</button>
+          <p class="apply-status full" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </div>
   </section>
