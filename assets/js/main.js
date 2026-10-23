@@ -56,6 +56,16 @@
     });
   });
 
+  // E-Mail-Adresse kopieren
+  document.querySelectorAll('[data-copy]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var t = b.getAttribute('data-copy'), note = document.querySelector('[data-copy-note]');
+      var done = function () { if (note) note.textContent = 'Adresse kopiert: ' + t; };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(done, function () { if (note) note.textContent = t; });
+      else if (note) note.textContent = t;
+    });
+  });
+
   var y = document.querySelectorAll('[data-year]');
   y.forEach(function (el) { el.textContent = new Date().getFullYear(); });
 })();

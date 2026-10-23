@@ -264,3 +264,26 @@ a{color:var(--red-text)}a:hover{color:#FF8587}
 .soon-inline{margin:40px 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:12px 14px;font-size:18px;font-weight:600;color:var(--soft)}
 .soon-inline--center{justify-content:center}
 @media (max-width:560px){.soon{padding:28px 22px}}
+
+/* Kostenfrei-Phase (Betreiber) */
+.free{display:flex;flex-wrap:wrap;gap:56px;align-items:center}
+.free-main{flex:1 1 520px;min-width:0}
+.free-text{margin:20px 0 0;max-width:560px;font-size:19px;line-height:1.55;color:#3A3734}
+.free-steps{flex:1 1 380px;min-width:0;margin:0;padding:36px;list-style:none;display:flex;flex-direction:column;gap:26px;background:var(--ink);color:var(--text);border-radius:12px}
+.free-steps li{display:flex;gap:18px;align-items:flex-start}
+.free-steps b{flex:0 0 48px;font-family:var(--display);font-weight:900;font-size:52px;line-height:.8;color:var(--red)}
+.free-steps strong{display:block;font-family:var(--display);font-weight:800;font-size:30px;line-height:1;text-transform:uppercase}
+.free-steps span{display:block;margin-top:6px;font-size:16px;color:var(--muted)}
+.mailbox{display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start}
+.mailbox-intro{flex:1 1 400px;min-width:0}
+.mailbox-card{flex:1 1 480px;min-width:0;padding:36px;border-radius:12px;background:var(--panel);border:1px solid var(--line-2);display:flex;flex-direction:column;gap:14px}
+.mailbox-card small{font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.mailbox-address{font-family:var(--display);font-weight:900;font-size:clamp(30px,4vw,48px);line-height:1;color:var(--text);text-decoration:none;overflow-wrap:anywhere;user-select:all}
+.mailbox-address:hover{color:var(--red-text)}
+.mailbox-card p{margin:6px 0 0;font-size:16px;color:var(--soft)}
+.mailbox-card ul{margin:0;padding:0 0 0 20px;display:flex;flex-direction:column;gap:6px;font-size:16px;color:var(--soft)}
+.mailbox-actions{margin-top:10px;display:flex;flex-wrap:wrap;gap:10px}
+.btn-ghost-light{background:transparent;border:2px solid #3A3636;color:var(--text)}
+.btn-ghost-light:hover{color:var(--text);border-color:var(--text)}
+.mailbox-note{margin:0;font-size:14px;font-weight:700;color:#9BE3A6;min-height:1em}
+@media (max-width:560px){.free-steps,.mailbox-card{padding:24px 20px}}
